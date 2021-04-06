@@ -1,0 +1,25 @@
+title: Checkov
+description: Checkov theme for Jekyll to use with GitHub Pages.
+
+# Development server config, needed to load some of the content
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+
+# Theme settings
+site_author: Matthew Schroeter
+repo_url: 'https://github.com/bridgecrewio/checkov-theme-2/'
+edit_on_github: true
+github_docs_folder: false
+sticky_navigation: true
+prev_next_buttons_location: both
+search_enabled: true
+hljs_style: github-gist
+exclude: ['/assets/node_modules', '/assets/gulpfile.js', '/assets/package.json', '/assets/package-lock.json', '/assets/yarn.lock', '/assets/README.md', '/assets/scss']
+plugins:
+  - jekyll-get-json
+
+# Menus
+jekyll_get_json:
+  - data: menus
+    json: 'menus.json'

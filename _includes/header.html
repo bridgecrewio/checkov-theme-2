@@ -1,0 +1,66 @@
+<header class="header">
+    <div class="header-bridgecrew">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-padding-y align-middle">
+                <aside class="cell small-auto shrink">
+                    <a href="https://www.bridgecrew.io?utm_source=checkovio&utm_medium=organic_oss&utm_campaign=checkov" target="_blank" class="logo-wrapper">
+                        <img height="25px" width="auto" alt="Bridgecrew.io" src="{{site.baseurl}}/assets/img/bridgecrew_logo.png">
+                    </a>
+                </aside>
+                <nav class="cell small-auto medium-10 shrink utility-nav">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        {% for item in site.data.menus.utility %}
+                        <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
+                            <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                            {% if item.submenu %}
+                            <ul class="menu">
+                                {% for subitem in item.submenu %}
+                                    <li>
+                                        <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+	
+    <div class="header-nav">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-padding-y align-middle">
+                <div class="cell small-auto shrink">
+                    <a href="https://www.checkov.io/" target="_blank" class="logo-wrapper">
+                        <img src="https://www.checkov.io/web/images/checkov-logo.svg" class="image">
+                    </a>
+                </div>
+                <div class="cell small-auto shrink main-nav align-self-bottom">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        {% for item in site.data.menus.main %}
+                        <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
+                            <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                            {% if item.submenu %}
+                            <ul class="menu">
+                                {% for subitem in item.submenu %}
+                                <li>
+                                    <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="btns-container in-header">
+            <a href="https://www.checkov.io/1.Introduction/Getting%20Started.html" class="button shadow-none">Install</a>
+        </div>
+        <i class="fa fa-bars"></i>
+    </div>
+</header>

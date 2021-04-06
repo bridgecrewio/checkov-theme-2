@@ -1,0 +1,31 @@
+<nav role="navigation" aria-label="breadcrumbs navigation" class="breadcrumbs-wrap">
+  <ul class="breadcrumbs">
+    {%- if page %}
+      {%- if page.collection == "posts" %}
+        <li><a href="{{ site.url | absolute_url }}{{ site.github.baseurl }}">Posts</a></li>
+        <li>{{ page.title }}</li>
+      {%- else %}
+        {%- assign page_directories = page.dir | split: '/' %}
+        <li><a href="{{ site.url | absolute_url }}{{ site.github.baseurl }}">Docs</a></li>
+        {%- for dir in page_directories %}
+        {%- if forloop.first == false %}
+        <li>{{ dir | capitalize }}</li>
+        {%- endif %}
+        {%- endfor %}
+        <li>{{ page.title }}</li>
+      {%- endif %}
+    {%- endif %}
+  </ul>
+  <aside class="breadcrumbs-aside">
+    {%- if site.edit_on_github != false and page and page.name != "search.html" %}
+    <a href="{{ site.repo_url | url }}/blob/master/{%- if site.github_docs_folder %}docs/{% endif %}{{ page.path }}" target="_blank">
+      <svg class="icon">
+        <use xlink:href="#github-logo"></use>
+      </svg>
+      Edit on GitHub
+    </a>
+    {%- endif %}
+  </aside>
+
+  <hr/>
+</nav>
