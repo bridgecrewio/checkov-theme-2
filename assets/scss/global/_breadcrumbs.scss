@@ -2,6 +2,16 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+
+  .breadcrumbs {
+    li {
+      color: $primary-color;
+
+      &:last-of-type {
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 .breadcrumbs-aside {

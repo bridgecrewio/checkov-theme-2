@@ -1,0 +1,33 @@
+.header-bridgecrew {
+  background: $dark-gray;
+
+  .utility-nav {
+    li {
+      a {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.header-nav {
+  .main-nav {
+    margin-left: auto;
+  }
+
+  .menu {
+    align-items: center;
+
+    .github-stars {
+      padding: 0.7rem 1rem;
+    }
+
+    .button-container {
+      padding: 0.7rem 0 0.7rem 1rem;
+
+      .button {
+        padding: 8px 24px;
+      }
+    }
+  }
+}

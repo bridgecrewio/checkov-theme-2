@@ -43,6 +43,7 @@ function serve() {
 
   gulp.watch('scss/**/*.scss', gulp.series('compile'));
   gulp.watch(['../**/*.html', '!../_site/**/*.html'], gulp.series(jekyll)).on('change', browserSync.reload);
+  gulp.watch(['../**/*.js', '!../_site/**/*.js'], gulp.series(jekyll, browserSync.reload))
 }
 
 gulp.task('sass', sass)
