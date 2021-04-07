@@ -70,14 +70,14 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.2;
 $foundation-palette: (
   primary: #052882,
-  secondary: #767676,
+  secondary: #A4B0CE,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #f0f2f8;
 $medium-gray: #a4b0ce;
-$dark-gray: #8a8a8a;
+$dark-gray: #e7ebf4;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -310,7 +310,9 @@ $button-sizes: (
   default: 0.9rem,
   large: 1.25rem,
 );
-$button-palette: $foundation-palette;
+$button-palette: map-merge($foundation-palette, (
+        gray: $dark-gray
+));
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;

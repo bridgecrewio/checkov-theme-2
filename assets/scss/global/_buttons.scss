@@ -1,0 +1,9 @@
+.button {
+  &.rounded {
+    border-radius: 500px;
+  }
+
+  &.gray {
+    color: $primary-color;
+  }
+}

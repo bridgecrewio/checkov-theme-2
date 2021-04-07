@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 title: Demo Pages Index
 nav_order: 1
 ---

@@ -21,6 +21,8 @@
 
 <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
+{% include sprite.svg %}
+
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"/>
 <link rel="stylesheet" href="{{ 'assets/css/app.css' | absolute_url }}"/>
@@ -37,5 +39,3 @@
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css"/>
 {%- endif %}
-
-{% include sprite.svg %}

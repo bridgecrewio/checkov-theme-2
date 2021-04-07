@@ -4,7 +4,7 @@
 # https://github.com/pmarsceill/just-the-docs/blob/v0.2.7-r/docs/index-test.md
 # Changes have been made to adapt it for this project.
 
-layout: documentation
+layout: default
 title: Markdown Kitchen Sink Example
 excerpt: A sample description for SEO.
 nav_order: 2

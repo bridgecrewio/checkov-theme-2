@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Install Theme In A Jekyll Project
 nav_order: 2
 ---

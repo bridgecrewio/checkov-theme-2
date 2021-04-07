@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 published: true
 title: Policies
 order: 3
