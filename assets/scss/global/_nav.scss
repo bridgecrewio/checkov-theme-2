@@ -23,6 +23,20 @@
 
     .github-stars {
       padding: 0.7rem 1rem;
+
+      a {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      &__count {
+        .icon {
+          max-height: 12px;
+          max-width: 24px;
+        }
+      }
     }
 
     .button-container {

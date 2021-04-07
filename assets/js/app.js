@@ -6,8 +6,8 @@ $(document).ready(function() {
         headers: { 'Accept': 'application/vnd.github.preview'},
         success: function(response) {
             if(response.watchers_count) {
-                $('.github-stars').append(
-                    '<span class="separator"> | </span> <span class="github-stars__count"><svg class="icon"><use xlink:href="#star"></use></svg>' + abbrNum(response.watchers_count, 1) + '</span>'
+                $('.github-stars > a').append(
+                    '<span class="separator"> &#x7c; </span> <span class="github-stars__count"><svg class="icon"><use xlink:href="#star"></use></svg>' + abbrNum(response.watchers_count, 1) + '</span>'
                 )
             }
         },
