@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 title: What is All This? (FAQs)
 nav_order: 3
 ---

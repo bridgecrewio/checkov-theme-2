@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 title: Checkov Documentation | Index
 nav_exclude: true
 ---

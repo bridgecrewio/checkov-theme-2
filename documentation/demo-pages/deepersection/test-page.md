@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 title: A Page In A Deeper Section
 excerpt: A sample description for SEO.
 nav_order: 3
