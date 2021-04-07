@@ -2,4 +2,8 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19" id="github-logo">
     <path d="M12.487 18v-3.129a2.687 2.687 0 00-.155-1.137 2.718 2.718 0 00-.616-.973C14.292 12.478 17 11.516 17 7.101a4.36 4.36 0 00-1.23-3.031 4.043 4.043 0 00-.075-3.048s-.968-.283-3.208 1.196a11.136 11.136 0 00-5.743 0C4.504.738 3.535 1.022 3.535 1.022a4.043 4.043 0 00-.073 3.048A4.364 4.364 0 002.23 7.126c0 4.382 2.707 5.344 5.284 5.66a2.688 2.688 0 00-.771 2.086V18m0-2.425C2.64 16.787 2.64 13.553 1 13.149l5.744 2.426z" stroke="#052882" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" id="arrow">
+    <path d="M1 1l6 6 6-6" stroke="#052882" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>

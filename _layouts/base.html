@@ -5,45 +5,8 @@
 <html class="no-js" lang="en"> <!--<![endif]-->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if page and page.excerpt %}
-    <meta name="description" content="{{ page.excerpt }}">
-    {% elsif page and page.path == "index.md" %}
-    <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    {% if site.site_author %}
-    <meta name="author" content="{{ site.site_author }}">
-    {% endif %}
-    {% if page and page.canonical_url %}
-    <link rel="canonical" href="{{ page.canonical_url }}">
-    {% endif %}
 
-    {% if config.site_favicon %}
-    <link rel="shortcut icon" href="{{ config.site_favicon | url }}">
-    {% else %}
-    <link rel="shortcut icon" href="{{ 'assets/img/favicon.png' | absolute_url  }}">
-    {% endif %}
-
-    <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700"/>
-    <link rel="stylesheet" href="{{ 'assets/css/app.css' | absolute_url }}"/>
-    <script defer
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-    <script defer src="{{ 'assets/js/app.js' | absolute_url }}"></script>
-    {%- if site.hljs_style %}
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{site.hljs_style}}.min.css"/>
-    {%- else %}
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css"/>
-    {%- endif %}
+    {% include head.html %}
 
 </head>
 

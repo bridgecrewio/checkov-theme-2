@@ -1,4 +1,92 @@
 .docs-menu {
   background: $light-gray;
   border-radius: 24px;
+  padding: 2.5rem !important;
+
+  &__heading {
+    color: $black;
+
+    a {
+      color: $black;
+    }
+  }
+
+  .dropdown-title {
+    text-transform: capitalize;
+
+    &[aria-expanded='true'] {
+      a.caption {
+        border-bottom: 1px solid $medium-gray;
+        //padding-bottom: 1.25rem;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0.5rem;
+
+    a {
+      padding-left: 0;
+    }
+
+    .toctree-l1 {
+      > a {
+        padding-left: 0;
+        font-weight: 500;
+      }
+
+      &.current {
+        > a {
+          position: relative;
+          color: $white;
+          z-index: 1;
+
+          &:before {
+            content: "";
+            display: block;
+            width: calc(100% + 2rem) !important;
+            height: 100%;
+            background: $primary-color;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: -1rem;
+            z-index: -1;
+            transition: none;
+          }
+        }
+      }
+    }
+
+    &.is-accordion-submenu {
+      margin-left: 0;
+    }
+  }
+
+  .accordion-menu {
+    .is-accordion-submenu-parent {
+      &:not(.has-submenu-toggle) {
+        > a {
+          &:after {
+            border: 0;
+            content: url('/assets/img/arrow.svg');
+            width: 12px;
+            height: 8px;
+            transform: translateY(calc(-50% - 3px));
+            right: 0;
+          }
+        }
+      }
+
+      &[aria-expanded="true"] {
+       > a {
+          &:after {
+            transform: rotate(180deg) translateY(calc(-50% - 3px));
+            margin-top: initial;
+          }
+        }
+      }
+    }
+  }
 }
