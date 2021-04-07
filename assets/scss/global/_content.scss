@@ -1,0 +1,9 @@
+.content {
+  hr {
+    margin-top: 0;
+  }
+
+  @include breakpoint(medium) {
+    margin-left: 2rem;
+  }
+}

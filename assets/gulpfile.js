@@ -3,8 +3,8 @@ const browserSync   = require('browser-sync').create();
 const $             = require('gulp-load-plugins')();
 const autoprefixer  = require('autoprefixer');
 const fs            = require('fs')
+const runSequence   = require('gulp4-run-sequence').use(gulp);
 const browsers      = JSON.parse(fs.readFileSync('./.browserslistrc'))
-const gutil         = require('gulp-util');
 
 const sassPaths = [
   'node_modules/foundation-sites/scss',
@@ -26,23 +26,25 @@ function sass() {
 }
 
 // Run jekyll build command.
-function jekyll() {
-  const shellCommand = 'cd .. && bundle exec jekyll build --disable-disk-cache --config _config.yml';
+function jekyll(callback) {
   return gulp.src('/', {allowEmpty: true})
-      .pipe($.run(shellCommand))
-      .on('error', gutil.log)
-      .pipe(gulp.dest('assets'))
+      .pipe($.run('cd .. && bundle exec jekyll build --disable-disk-cache --config _config.yml'))
+      .on('error', $.util.log)
 }
+
+gulp.task('compile', (resolve) => {
+  runSequence(sass, jekyll, browserSync.reload, resolve());
+})
 
 function serve() {
   browserSync.init({
     server: "../_site/"
   });
 
-  gulp.watch('scss/**/*.scss', gulp.series([sass, jekyll]));
+  gulp.watch('scss/**/*.scss', gulp.series('compile'));
   gulp.watch(['../**/*.html', '!../_site/**/*.html'], gulp.series(jekyll)).on('change', browserSync.reload);
 }
 
-gulp.task('sass', sass);
+gulp.task('sass', sass)
 gulp.task('serve', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass', serve));
