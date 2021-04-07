@@ -6,4 +6,8 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" id="arrow">
     <path d="M1 1l6 6 6-6" stroke="#052882" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" id="star">
+    <path d="M7 1l1.854 3.62L13 5.205 10 8.02l.708 3.98L7 10.12 3.292 12 4 8.021 1 5.205l4.146-.585L7 1z" stroke="#052882" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>
