@@ -1,0 +1,100 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $dark-blue;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(96.91deg, #1648CA 28%, rgba(22, 72, 202, 0.63) 39%, rgba(22, 72, 202, 0.29) 48%, rgba(22, 72, 202, 0.08) 55%, rgba(22, 72, 202, 0) 58%);
+    filter: blur(400px);
+    position: absolute;
+    top: 0;
+    left: -25%;
+    transform: rotate(180deg);
+    z-index: 0;
+  }
+
+  &-nav {
+    position: relative;
+    z-index: 1;
+    margin-top: 0.5rem;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $dark-gray;
+        }
+      }
+
+      @include breakpoint(medium) {
+        columns: 2;
+      }
+
+      @include breakpoint(large) {
+        columns: 3;
+      }
+    }
+  }
+
+  .branding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    z-index: 1;
+
+    .powered-text {
+      color: $dark-gray;
+      font-size: .75rem;
+      margin: 0;
+    }
+
+    .bridge-logo {
+      max-height: 40px;
+      max-width: 206px;
+      margin: 0.5rem 0;
+
+      path {
+        fill: $dark-gray;
+      }
+    }
+
+    @include breakpoint(medium) {
+      max-width: 242px;
+    }
+  }
+
+  .social-nav {
+    margin-top: auto;
+    justify-content: flex-start;
+    margin-left: -0.25rem;
+
+    &__anchor {
+      width: auto;
+      padding: 0.25rem;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
