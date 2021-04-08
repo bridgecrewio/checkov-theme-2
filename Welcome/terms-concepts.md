@@ -4,6 +4,7 @@ slug: "terms-concepts"
 hidden: false
 createdAt: "2021-03-11T13:33:04.517Z"
 updatedAt: "2021-03-22T15:21:51.740Z"
+nav_order: 3
 ---
 # Checkov Concepts
 **Policy:** Security policies define various aspects of your cloud configuration that impact the overall security of the environment. For example, multi-factor authentication should be enabled for the root account. A resource that is not in the state defined in a policy is non-compliant and will appear in scan results.

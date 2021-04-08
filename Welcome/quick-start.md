@@ -4,6 +4,8 @@ slug: "quick-start"
 hidden: false
 createdAt: "2021-03-15T13:43:09.039Z"
 updatedAt: "2021-03-22T15:47:16.215Z"
+layout: default
+nav_order: 2
 ---
 #Getting Started
 This Quick Start guide shows the procedures for installing Checkov, running a scan and viewing the results.

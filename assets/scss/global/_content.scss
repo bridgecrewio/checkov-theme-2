@@ -7,3 +7,9 @@
     margin-left: 2rem;
   }
 }
+
+body:not(.home) {
+  .main-content {
+    margin-top: 100px;
+  }
+}

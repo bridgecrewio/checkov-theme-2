@@ -29,46 +29,44 @@
         </div>
     </div>
 	
-    <div class="header-nav sticky-container"r>
-        <div class="sticky"">
-            <div class="grid-container">
-                <div class="grid-x grid-padding-x grid-padding-y align-middle">
-                    <div class="cell small-auto shrink">
-                        <a href="https://www.checkov.io/" target="_blank" class="logo-wrapper">
-                            <img src="{{site.baseurl}}/assets/img/checkov_logo.png" class="image">
-                        </a>
-                    </div>
-                    <div class="cell small-auto shrink main-nav align-middle">
-                        <ul class="dropdown menu" data-dropdown-menu>
-                            {% for item in site.data.menus.main %}
-                            <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
-                                <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
-                                {% if item.submenu %}
-                                <ul class="menu">
-                                    {% for subitem in item.submenu %}
-                                    <li>
-                                        <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
-                            </li>
-                            {% endfor %}
-                            <li class="github-stars">
-                                <a href="https://www.github.com/bridgecrewio/checkov" target="_blank">
-                                    <svg class="icon">
-                                        <use xlink:href="#github-logo"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="button-container">
-                                <a href="https://www.checkov.io/1.Introduction/Getting%20Started.html" class="button primary rounded">Download</a>
-                            </li>
-                            <li class="button-container">
-                                <a href="https://www.bridgecrew.io?utm_source=checkovio&utm_medium=organic_oss&utm_campaign=checkov" class="button gray rounded">Try Bridgecrew</a>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="header-nav" id="sticky-nav">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-padding-y align-middle">
+                <div class="cell small-auto shrink">
+                    <a href="https://www.checkov.io/" target="_blank" class="logo-wrapper">
+                        <img src="{{site.baseurl}}/assets/img/checkov_logo.png" class="image">
+                    </a>
+                </div>
+                <div class="cell small-auto shrink main-nav align-middle">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        {% for item in site.data.menus.main %}
+                        <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
+                            <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                            {% if item.submenu %}
+                            <ul class="menu">
+                                {% for subitem in item.submenu %}
+                                <li>
+                                    <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                        <li class="github-stars">
+                            <a href="https://www.github.com/bridgecrewio/checkov" target="_blank">
+                                <svg class="icon">
+                                    <use xlink:href="#github-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="button-container">
+                            <a href="https://www.checkov.io/1.Introduction/Getting%20Started.html" class="button primary rounded">Download</a>
+                        </li>
+                        <li class="button-container">
+                            <a href="https://www.bridgecrew.io?utm_source=checkovio&utm_medium=organic_oss&utm_campaign=checkov" class="button gray rounded">Try Bridgecrew</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

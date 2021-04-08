@@ -4,6 +4,8 @@ slug: "what-is-checkov"
 hidden: false
 createdAt: "2021-03-11T13:32:51.381Z"
 updatedAt: "2021-03-22T16:32:19.539Z"
+layout: default
+nav_order: 1
 ---
 #Overview
 Checkov is a static code analysis tool for scanning IaC files for misconfigurations that could lead to security problems. Checkov includes more than 750 predefined Policies to check for common misconfiguration issues and also supports creation and contribution of of Custom Policies. 
