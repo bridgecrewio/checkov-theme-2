@@ -129,6 +129,23 @@
       box-shadow: -5px 5px 10px 2px rgba(0,0,0,0.49);
     }
 
+    &-video {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 100%;
+      border-radius: 8px;
+      background-color: $black;
+      box-shadow: -5px 5px 10px 2px rgba(0,0,0,0.49);
+      overflow: hidden;
+
+      video {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        border: 20px solid $black;
+      }
+    }
+
     @include breakpoint(medium) {
       height: 660px;
       padding-bottom: 0 !important;
@@ -146,6 +163,19 @@
           height: 761px;
           width: auto;
           max-width: initial;
+        }
+      }
+
+      &-video {
+        width: 770px;
+        overflow: hidden;
+        margin-top: -3rem;
+
+        video {
+          position: absolute;
+          width: auto;
+          max-width: initial;
+          border-radius: 8px;
         }
       }
     }
