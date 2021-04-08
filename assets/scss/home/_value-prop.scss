@@ -2,4 +2,47 @@
   background-color: $light-gray;
   padding-top: 64px;
   padding-bottom: 64px;
+
+  &__accordion {
+    .accordion {
+      &-title {
+        font-family: $header-font-family;
+        font-weight: bold;
+        padding: rem-calc(16);
+      }
+
+      &-item {
+        padding-left: rem-calc(8);
+        margin-left: rem-calc(24);
+
+        &.is-active {
+          padding: rem-calc(40);
+          margin-left: 0;
+          background: $dark-blue;
+          border-radius: 24px;
+
+          .accordion-title {
+            padding-bottom: 0;
+            color: $white;
+          }
+
+          .accordion-content {
+            color: $white;
+
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        &:not(.is-active) {
+          border-left: 1px solid $dark-blue;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: rem-calc(40);
+        }
+      }
+    }
+  }
 }
