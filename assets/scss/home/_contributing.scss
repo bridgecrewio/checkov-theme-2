@@ -1,0 +1,56 @@
+.home-contributing {
+  background: $primary-color;
+  border-radius: 24px;
+  color: $white;
+  padding: rem-calc(80);
+  margin: rem-calc(192) rem-calc(16) 0 rem-calc(16) !important;
+
+  &__content {
+    margin: 0 auto 4rem auto;
+    width: 100%;
+    max-width: 440px;
+
+    &-title {
+      margin-bottom: rem-calc(40);
+    }
+  }
+
+  &__link-text {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    font-weight: 500;
+    margin-top: 1.25rem;
+
+    svg {
+      transform: translateY(2px);
+      stroke: $white;
+      max-width: rem-calc(18px);
+      margin-left: 0.75rem;
+    }
+  }
+
+  .card {
+    background: transparent;
+    color: $white;
+    border: 0;
+    border-radius: 16px;
+
+    &.section {
+      padding-top: 0.5rem;
+    }
+
+    &:hover {
+      box-shadow: -5px 5px 10px 2px rgba(0,0,0,0.19);
+    }
+
+    .h4 {
+      font-weight: bold;
+      font-size: rem-calc(20);
+      max-width: 145px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
