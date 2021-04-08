@@ -2,6 +2,15 @@
   background-color: $light-gray;
   padding-top: 64px;
   padding-bottom: 64px;
+  overflow: hidden;
+
+  &__heading {
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(medium) {
+      margin-bottom: 7rem;
+    }
+  }
 
   &__accordion {
     .accordion {
@@ -43,6 +52,23 @@
           margin-bottom: rem-calc(40);
         }
       }
+    }
+  }
+
+  &__carousel {
+    border: 8px solid rgba(2, 20, 65, 0.24);
+    border-radius: 32px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 0;
+
+    @include breakpoint(medium) {
+      position: absolute;
+      left: 1rem;
+      width: 738px;
+      height: 0;
+      padding-bottom: 592px;
+      overflow: hidden;
     }
   }
 }
