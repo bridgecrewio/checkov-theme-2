@@ -4,6 +4,7 @@ slug: "scan-3rd-party-terraform-module-1"
 hidden: false
 createdAt: "2021-03-11T21:37:56.876Z"
 updatedAt: "2021-03-11T21:43:09.975Z"
+layout: default
 ---
 # Scanning third party Terraform modules
 Third party Terraform modules often reduce complexity for deploying services made up of many objects.

@@ -6,6 +6,7 @@
   .breadcrumbs {
     li {
       color: $primary-color;
+      text-transform: capitalize;
 
       &:last-of-type {
         font-weight: 500;

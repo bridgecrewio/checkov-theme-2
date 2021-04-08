@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="header-bridgecrew">
+    <div class="header-bridgecrew show-for-large">
         <div class="grid-container">
             <div class="grid-x grid-padding-x grid-padding-y align-middle">
                 <aside class="cell small-auto shrink">
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-	
+
     <div class="header-nav" id="sticky-nav">
         <div class="grid-container">
             <div class="grid-x grid-padding-x grid-padding-y align-middle">
@@ -37,7 +37,7 @@
                         <img src="{{site.baseurl}}/assets/img/checkov_logo.png" class="image">
                     </a>
                 </div>
-                <div class="cell small-auto shrink main-nav align-middle">
+                <div class="cell large-auto show-for-large shrink main-nav align-middle">
                     <ul class="dropdown menu" data-dropdown-menu>
                         {% for item in site.data.menus.main %}
                         <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
@@ -68,11 +68,35 @@
                         </li>
                     </ul>
                 </div>
+                <div class="cell small-auto hide-for-large shrink hamburger align-middle">
+                    {% include hamburger.html %}
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="btns-container in-header">
+    <div class="mobile-nav hide-for-large">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-padding-y align-middle">
+                <div class="cell small-auto align-middle">
+                    <ul class="dropdown vertical menu" data-dropdown-menu>
+                        {% for item in site.data.menus.main %}
+                        <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
+                            <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                            {% if item.submenu %}
+                            <ul class="menu">
+                                {% for subitem in item.submenu %}
+                                <li>
+                                    <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         </div>
-        <i class="fa fa-bars"></i>
     </div>
 </header>

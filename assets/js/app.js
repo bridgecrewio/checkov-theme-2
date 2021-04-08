@@ -16,6 +16,25 @@ $(document).ready(function() {
         }
     });
 
+    $('.fade-carousel').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        autoplay: true,
+        cssEase: 'linear'
+    });
+
+    $('.hamburger-button').on('click', function(e) {
+        var $mobileNav = $('.mobile-nav');
+        if($mobileNav.hasClass('open')) {
+            $mobileNav.removeClass('open');
+        } else {
+            $('mobile-nav').addClass('open');
+        }
+    })
+
 
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};

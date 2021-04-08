@@ -65,7 +65,7 @@ to implement this, but the Liquid template language is very limited.
                         {%- assign set_next_page = true %}
                     {%- endif %}
                 {%- else %}
-                    <ul class="menu nested vertical">
+                    <ul class="menu nested vertical" data-smooth-scroll>
                         <li class="toctree-l1">
                             <a class="reference internal" href="{{ nav_item.url | absolute_url}}">{{ nav_item.title | url_decode }}</a>
                         </li>
