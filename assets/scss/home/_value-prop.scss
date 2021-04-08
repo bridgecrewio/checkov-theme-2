@@ -63,6 +63,7 @@
     margin-left: 0;
 
     @include breakpoint(medium) {
+      transform: translateY(-48px);
       position: absolute;
       left: 1rem;
       width: 738px;
