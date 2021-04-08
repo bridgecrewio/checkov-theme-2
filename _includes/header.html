@@ -79,7 +79,7 @@
         <div class="grid-container">
             <div class="grid-x grid-padding-x grid-padding-y align-middle">
                 <div class="cell small-auto align-middle">
-                    <ul class="dropdown vertical menu" data-dropdown-menu>
+                    <ul class="accordion-menu vertical menu" data-accordion-menu>
                         {% for item in site.data.menus.main %}
                         <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
                             <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
