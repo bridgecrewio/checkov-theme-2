@@ -28,10 +28,11 @@ $(document).ready(function() {
 
     $('.hamburger-button').on('click', function(e) {
         var $mobileNav = $('.mobile-nav');
+
         if($mobileNav.hasClass('open')) {
             $mobileNav.removeClass('open');
         } else {
-            $('mobile-nav').addClass('open');
+            $mobileNav.addClass('open');
         }
     })
 
