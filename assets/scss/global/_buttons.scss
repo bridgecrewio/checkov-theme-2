@@ -1,9 +1,21 @@
 .button {
+  padding: 8px 24px;
+
   &.rounded {
     border-radius: 500px;
   }
 
   &.gray {
     color: $primary-color;
+  }
+
+  &.white {
+    background: $white;
+    color: $primary-color;
+
+    &:hover {
+      background: $medium-gray;
+      color: $dark-blue;
+    }
   }
 }

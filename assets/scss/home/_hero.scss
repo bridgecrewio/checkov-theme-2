@@ -1,0 +1,163 @@
+.home-hero {
+  background: $dark-blue;
+  position: relative;
+  padding-top: 200px;
+  overflow: hidden;
+
+  .grid-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    color: $white;
+
+    &-title {
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 3.5rem;
+    }
+
+    &-subtitle {
+      font-size: 1.25rem;
+    }
+
+    .button {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-content: center;
+      line-height: 1.2;
+      margin-top: 2rem;
+
+      .icon {
+        max-width: 18px;
+        margin-left: 0.75rem;
+      }
+    }
+
+    @include breakpoint(medium) {
+      padding-right: 6rem !important;
+
+      &-title {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .circle {
+      display: block;
+      background: rgba(213, 219, 235, 0.24);
+      border-radius: 2000px;
+      position: absolute;
+      z-index: 1;
+
+      &_1 {
+        width: 1147px;
+        height: 1147px;
+        top: 35%;
+        left: 0;
+      }
+
+      &_2 {
+        width: 840px;
+        height: 840px;
+        top: calc(35% + 154px);
+        left: 154px;
+      }
+
+      &_3 {
+        width: 520px;
+        height: 520px;
+        top: calc(35% + 308px);
+        left: 308px;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 115%;
+      height: 150%;
+      background: linear-gradient(96.91deg, #1648CA 28%, rgba(22, 72, 202, 0.63) 39%, rgba(22, 72, 202, 0.29) 48%, rgba(22, 72, 202, 0.08) 55%, rgba(22, 72, 202, 0) 58%);
+      filter: blur(400px);
+      position: absolute;
+      top: 0;
+      left: -25%;
+      transform: rotate(180deg);
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(96.91deg, #435EA1 28%, rgba(#435EA1, 0.63) 39%, rgba(#435EA1, 0.29) 48%, rgba(22, 72, 202, 0.08) 55%, rgba(22, 72, 202, 0) 58%);
+      filter: blur(400px);
+      position: absolute;
+      top: 0;
+      left: -25%;
+      transform: rotate(-45deg);
+      z-index: 2;
+    }
+  }
+
+  &__media {
+    height: 0;
+    border-radius: 8px;
+    padding-bottom: 100% !important;
+    position: relative;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top -1px left -1px;
+    }
+
+    @include breakpoint(medium) {
+      height: 660px;
+      padding-bottom: 0 !important;
+
+      &-image {
+        width: 770px;
+        overflow: hidden;
+        border-radius: 8px;
+        background-size: cover;
+
+        img {
+          position: absolute;
+          top: -1px;
+          left: -1px;
+          height: 761px;
+          width: auto;
+          max-width: initial;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, $white 50%, $white 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+}

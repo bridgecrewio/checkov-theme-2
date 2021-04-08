@@ -1,5 +1,121 @@
----
-layout: base
----
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
-{{ content }}
+    {% include head.html %}
+
+</head>
+
+{% include header.html %}
+
+<body class="home" role="document">
+
+<div class="wy-grid-for-nav">
+
+    <div class="main-content">
+        <section class="home-hero">
+            <div class="grid-container">
+                <div class="grid-x grid-padding-y grid-padding-x">
+                    <div class="cell medium-6 home-hero__content">
+                        <h1 class="home-hero__content-title">Policy-as-code for Everyone</h1>
+                        <p class="home-hero__content-subtitle">Checkov evaluates cloud infrastructure configurations and finds misconfigurations before they are deployed.</p>
+                        <p class="home-hero__content-content">Checkov uses a common command line interface to manage and observe infrastructure-as-code scan results across platforms such as Terraform, CloudFormation, Kubernetes, Helm, ARM Templates and Serverless framework.</p>
+                        <a href="/documentation" class="button white rounded">Get started<svg class="icon"><use xlink:href="#right-arrow"></use></svg></a>
+                    </div>
+                    <div class="cell medium-6 home-hero__media">
+                        <figure class="home-hero__media-image" style="background-image: url({{site.baseurl}}/assets/img/herocli.jpg)">
+                            <img src="{{site.baseurl}}/assets/img/herocli.jpg" alt="Checkov command line interface" class="show-for-sr" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="home-hero__bg">
+                <span class="circle circle_1"></span>
+                <span class="circle circle_2"></span>
+                <span class="circle circle_3"></span>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+{% include footer.html %}
+
+<script>var base_url = '{{ baseurl }}';</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" defer>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#edeff5",
+                    "text": "#838391"
+                },
+                "button": {
+                    "background": "#4b81e8"
+                }
+            },
+            "type": "opt-in",
+            "content": {
+                "href": "https://bridgecrew.io/privacy-policy/"
+            },
+            onInitialise: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && didConsent) {
+                    // enable cookies
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '{{ site.google_analytics }}');
+                }
+            },
+
+            onStatusChange: function(status, chosenBefore) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && didConsent) {
+                    // enable cookies
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '{{ site.google_analytics }}');
+                }
+            },
+
+            onRevokeChoice: function() {
+                var type = this.options.type;
+                if (type == 'opt-in') {
+                    // disable cookies
+                    clearCookie('_ga','.mysite.fr','/');
+                    clearCookie('_gat_gtag_{{ site.google_analytics }}','.mysite.fr','/');
+                    clearCookie('_gid','.mysite.fr','/');
+                    // Get an array of cookies
+                    var arrSplit = document.cookie.split(";");
+                    for(var i = 0; i < arrSplit.length; i++)
+                    {
+                        var cookie = arrSplit[i].trim();
+                        var cookieName = cookie.split("=")[0];
+                        // If the prefix of the cookie's name matches the one specified, remove it
+                        if(cookieName.indexOf("ssupp.") === 0) {
+                            // Remove the cookie
+                            document.cookie = cookieName + "=; Max-Age=-99999999;";
+                        }
+                    }
+                }
+            },
+        }
+    )
+    ;
+</script>
+</body>
+</html>
