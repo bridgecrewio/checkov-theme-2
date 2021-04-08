@@ -15,6 +15,7 @@
   &__accordion {
     .accordion {
       &-title {
+        color: $dark-blue;
         font-family: $header-font-family;
         font-weight: bold;
         padding: rem-calc(16);
@@ -63,6 +64,7 @@
     margin-left: 0;
 
     @include breakpoint(medium) {
+      transform: translateY(-48px);
       position: absolute;
       left: 1rem;
       width: 738px;
