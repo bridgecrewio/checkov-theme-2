@@ -82,10 +82,43 @@
                     </div>
                 </div>
                 <div class="grid-x grid-padding-y grid-padding-x value-prop__columns">
-                    <div class="cell medium-6">
-                        <h2 class="value-prop__heading">Fully-featured policy-as-code</h2>
+                    <div class="cell medium-6 value-prop__accordion">
+                        <ul class="accordion" data-accordion>
+                            <li class="accordion-item is-active" data-accordion-item>
+                                <a href="#" class="accordion-title">Attribute-based policies</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Scan cloud resources in build-time for misconfigured attributes with a simple Python policy-as-code framework.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">Graph-based policies</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Analyze relationships between cloud resources using Checkov’s graph-based YAML policies.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">Live Terminal Execution</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Execute, test, and modify runner parameters in the context of a subject repository CI/CD and version control integrations.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">Extensible policy management interfaces</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>
+                                        Extend Checkov to define your own custom policies, providers, and suppressions terms.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="cell medium-6">
+                    <div class="cell medium-6 relative">
                         <ul class="fade-carousel value-prop__carousel">
                             <li class="slick-item">
                                 <img src="{{site.baseurl}}/assets/img/value_prop_1.png" alt="Checkov CLI screenshot" />

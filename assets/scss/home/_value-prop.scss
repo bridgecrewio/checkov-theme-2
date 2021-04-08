@@ -2,4 +2,73 @@
   background-color: $light-gray;
   padding-top: 64px;
   padding-bottom: 64px;
+  overflow: hidden;
+
+  &__heading {
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(medium) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__accordion {
+    .accordion {
+      &-title {
+        font-family: $header-font-family;
+        font-weight: bold;
+        padding: rem-calc(16);
+      }
+
+      &-item {
+        padding-left: rem-calc(8);
+        margin-left: rem-calc(24);
+
+        &.is-active {
+          padding: rem-calc(40);
+          margin-left: 0;
+          background: $dark-blue;
+          border-radius: 24px;
+
+          .accordion-title {
+            padding-bottom: 0;
+            color: $white;
+          }
+
+          .accordion-content {
+            color: $white;
+
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        &:not(.is-active) {
+          border-left: 1px solid $dark-blue;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: rem-calc(40);
+        }
+      }
+    }
+  }
+
+  &__carousel {
+    border: 8px solid rgba(2, 20, 65, 0.24);
+    border-radius: 32px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 0;
+
+    @include breakpoint(medium) {
+      position: absolute;
+      left: 1rem;
+      width: 738px;
+      height: 0;
+      padding-bottom: 592px;
+      overflow: hidden;
+    }
+  }
 }
