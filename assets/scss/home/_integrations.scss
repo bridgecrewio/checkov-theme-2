@@ -1,0 +1,26 @@
+.home-integrations {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+
+  .grid-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    p {
+      color: $primary-color;
+    }
+  }
+
+  @include breakpoint(medium) {
+    margin-top: 72px;
+    padding-top: 128px;
+    padding-bottom: 200px;
+
+    &__content {
+      padding: 1rem 120px 1rem 1rem !important;
+    }
+  }
+}
