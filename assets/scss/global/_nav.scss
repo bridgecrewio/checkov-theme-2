@@ -1,6 +1,4 @@
 .header {
-  position: relative;
-
   &-bridgecrew {
     position: relative;
     background: $dark-gray;
@@ -77,65 +75,6 @@
     }
   }
 
-  body.home {
-    #sticky-nav {
-      &:not(.sticky) {
-        .menu {
-          a {
-            color: $white;
-
-            svg.icon {
-              fill: none !important;
-              stroke: $white !important;
-            }
-          }
-        }
-
-        .menu-item-has-children {
-          .submenu {
-            a {
-              color: $primary-color;
-            }
-          }
-        }
-
-        .button {
-          &.primary {
-            background: $white;
-            color: $primary-color;
-            border: 1px solid $white;
-
-            &:hover {
-              background: $dark-gray;
-            }
-          }
-          &.gray {
-            background: transparent;
-            color: $white;
-            border: 1px solid $white;
-
-            &:hover {
-              background: $white;
-              color: $primary-color;
-            }
-          }
-        }
-
-        .logo-wrapper {
-          img {
-            filter: brightness(0) invert(1);
-          }
-        }
-
-        .hamburger-button {
-          .line {
-            stroke: $white;
-          }
-        }
-      }
-    }
-  }
-
   .mobile-nav {
     position: absolute;
     top: 90px;
@@ -197,6 +136,65 @@
       stroke-dasharray: 90 207;
       stroke-dashoffset: -134;
       stroke-width: 6;
+    }
+  }
+}
+
+body.home {
+  #sticky-nav {
+    &:not(.sticky) {
+      .menu {
+        a {
+          color: $white;
+
+          svg.icon {
+            fill: none !important;
+            stroke: $white !important;
+          }
+        }
+      }
+
+      .menu-item-has-children {
+        .submenu {
+          a {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .button {
+        &.primary {
+          background: $white;
+          color: $primary-color;
+          border: 1px solid $white;
+
+          &:hover {
+            background: $dark-gray;
+          }
+        }
+        &.gray {
+          background: transparent;
+          color: $white;
+          border: 1px solid $white;
+
+          &:hover {
+            background: $white;
+            color: $primary-color;
+          }
+        }
+      }
+
+      .logo-wrapper {
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      .hamburger-button {
+        .line {
+          stroke: $white;
+        }
+      }
     }
   }
 }
