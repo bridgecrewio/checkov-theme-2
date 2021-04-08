@@ -38,6 +38,14 @@
     }
 
     @include breakpoint(medium) {
+      padding-right: 2rem !important;
+
+      &-title {
+        font-size: 4rem;
+      }
+    }
+
+    @include breakpoint(large) {
       padding-right: 6rem !important;
 
       &-title {
@@ -131,18 +139,18 @@
 
     &-video {
       width: 100%;
-      height: 100%;
-      padding-bottom: 100%;
+      height: 0;
       border-radius: 8px;
-      background-color: $black;
-      box-shadow: -5px 5px 10px 2px rgba(0,0,0,0.49);
+      background-color: transparent;
       overflow: hidden;
 
       video {
         position: absolute;
-        height: 100%;
-        width: auto;
+        width: calc(100% - 20px);
+        max-width: 100%;
+        border-radius: 8px;
         border: 20px solid $black;
+        box-shadow: -5px 5px 10px 2px rgba(0,0,0,0.49);
       }
     }
 
@@ -170,12 +178,14 @@
         width: 770px;
         overflow: hidden;
         margin-top: -3rem;
+        padding-bottom: 100%;
 
         video {
-          position: absolute;
+          height: 93%;
           width: auto;
           max-width: initial;
           border-radius: 8px;
+          border: 20px solid $black;
         }
       }
     }
