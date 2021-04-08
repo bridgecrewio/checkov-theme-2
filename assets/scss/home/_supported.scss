@@ -1,0 +1,47 @@
+.home-supported {
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  overflow: hidden;
+
+  .grid-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 2.5rem;
+  }
+
+  .waves-container {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+
+    .waves {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @include breakpoint(medium) {
+    &__content {
+      padding: 64px 48px !important;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    .grid-container {
+      margin-bottom: 128px;
+    }
+  }
+}
