@@ -6,9 +6,6 @@ webrick:
   headers:
     Access-Control-Allow-Origin: "*"
 
-kramdown:
-  parse_block_html: true
-
 # Theme settings
 site_author: Matthew Schroeter
 repo_url: 'https://github.com/bridgecrewio/checkov-theme-2/'
