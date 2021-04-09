@@ -36,6 +36,9 @@ $(document).ready(function() {
         }
     })
 
+    // Make sure current submenu is down on page load
+    $('#docs-menu').foundation('down', $('.current.is-active > .submenu'))
+
 
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};

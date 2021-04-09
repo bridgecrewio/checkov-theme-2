@@ -77,7 +77,8 @@
 
         {% unless include.item_class == blank %}
             {% if headerLevel == 1 %}
-                {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}.current.is-active}{% endcapture %}
+                {% capture listClass %}{:.{{ include.class }}}{% endcapture %}
+                {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}.current.{{include.class}}}{% endcapture %}
             {% else %}
                 {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}}{% endcapture %}
             {% endif %}
