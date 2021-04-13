@@ -8,6 +8,19 @@
         a {
           color: $secondary-color;
         }
+
+        &.is-dropdown-submenu-parent {
+          > a {
+            &::after {
+              border: 0;
+              content: url('/assets/img/arrow.svg');
+              width: 12px;
+              height: 8px;
+              transform: translateY(calc(-50% - 3px));
+              right: 0;
+            }
+          }
+        }
       }
     }
   }
@@ -18,6 +31,19 @@
 
     .main-nav {
       margin-left: auto;
+
+      .is-dropdown-submenu-parent {
+        > a {
+          &::after {
+            border: 0;
+            content: url('/assets/img/arrow.svg');
+            width: 12px;
+            height: 8px;
+            transform: translateY(calc(-50% - 3px));
+            right: 0;
+          }
+        }
+      }
     }
 
     .menu {
@@ -154,7 +180,13 @@ body.home {
         }
       }
 
-      .menu-item-has-children {
+      .is-dropdown-submenu-parent {
+        > a {
+          &::after {
+            content: url('/assets/img/arrow_white.svg');
+          }
+        }
+
         .submenu {
           a {
             color: $primary-color;
