@@ -9,20 +9,9 @@
                 </aside>
                 <nav class="cell small-auto medium-10 shrink utility-nav">
                     <ul class="dropdown menu" data-dropdown-menu>
-                        {% for item in site.data.menus.utility %}
-                        <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
-                            <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
-                            {% if item.submenu %}
-                            <ul class="menu">
-                                {% for subitem in item.submenu %}
-                                    <li>
-                                        <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
+                        <li>
+                            <a href="https://bridgecrew.io/?utm_source=checkovio&utm_medium=organic_oss&utm_campaign=checkov">About Bridgecrew by Prisma Cloud</a>
                         </li>
-                        {% endfor %}
                     </ul>
                 </nav>
             </div>
@@ -39,20 +28,16 @@
                 </div>
                 <div class="cell large-auto show-for-large shrink main-nav align-middle">
                     <ul class="dropdown menu" data-dropdown-menu>
-                        {% for item in site.data.menus.main %}
-                        <li {% if item.submenu %} class="menu-item-has-children" {% endif %}>
-                            <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
-                            {% if item.submenu %}
-                            <ul class="menu">
-                                {% for subitem in item.submenu %}
-                                <li>
-                                    <a href="{{item.url}}" target="{{item.target}}">{{item.label}}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
+                        <li>
+                            <a href="/1.Welcome/What%20is%20Checkov.html">Overview</a>
                         </li>
-                        {% endfor %}
+                        <li>
+                            <a href="/1.Welcome/Quick%20Start.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="/2.Basics/Installing%20Checkov.html">Download</a>
+                        </li>
+
                         <li class="github-stars">
                             <a href="https://www.github.com/bridgecrewio/checkov" target="_blank">
                                 <svg class="icon">
