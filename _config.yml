@@ -22,4 +22,4 @@ plugins:
 # Menus
 jekyll_get_json:
   - data: menus
-    json: 'menus.json'
+    json: './menus.json'
