@@ -2,6 +2,7 @@
 title: "Contribute New Provider"
 slug: "contribute"
 hidden: false
+layout: default
 createdAt: "2021-03-11T14:30:10.427Z"
 updatedAt: "2021-03-18T13:30:27.821Z"
 ---

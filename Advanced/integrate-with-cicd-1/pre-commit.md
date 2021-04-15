@@ -2,6 +2,7 @@
 title: "Pre-Commit"
 slug: "pre-commit"
 hidden: false
+layout: default
 createdAt: "2021-03-22T15:25:02.647Z"
 updatedAt: "2021-03-22T15:29:41.023Z"
 ---

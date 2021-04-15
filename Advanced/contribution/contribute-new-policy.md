@@ -2,6 +2,7 @@
 title: "Contribute New Policy"
 slug: "contribute-new-policy"
 hidden: false
+layout: default
 createdAt: "2021-03-11T19:48:04.108Z"
 updatedAt: "2021-03-22T16:38:52.890Z"
 ---

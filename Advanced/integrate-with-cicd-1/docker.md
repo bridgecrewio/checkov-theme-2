@@ -2,10 +2,12 @@
 title: "Docker"
 slug: "docker"
 hidden: false
+layout: default
 createdAt: "2021-03-22T15:29:46.762Z"
 updatedAt: "2021-03-22T16:10:18.384Z"
 ---
-#Using Checkov with Docker
+# Using Checkov with Docker
+
 [block:code]
 {
   "codes": [

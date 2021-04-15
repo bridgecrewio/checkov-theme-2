@@ -2,6 +2,7 @@
 title: "Gitlab CLI"
 slug: "gitlab-cli"
 hidden: false
+layout: default
 createdAt: "2021-03-11T14:31:09.941Z"
 updatedAt: "2021-03-18T13:27:02.859Z"
 ---

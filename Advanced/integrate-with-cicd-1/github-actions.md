@@ -2,6 +2,7 @@
 title: "Github Actions"
 slug: "github-actions"
 hidden: false
+layout: default
 createdAt: "2021-03-11T14:31:03.660Z"
 updatedAt: "2021-03-18T13:24:17.461Z"
 ---

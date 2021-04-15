@@ -2,6 +2,7 @@
 title: "Jenkins"
 slug: "jenkins"
 hidden: false
+layout: default
 createdAt: "2021-03-11T14:30:49.827Z"
 updatedAt: "2021-03-18T13:21:17.343Z"
 ---

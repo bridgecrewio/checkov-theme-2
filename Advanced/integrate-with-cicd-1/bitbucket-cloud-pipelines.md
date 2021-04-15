@@ -2,6 +2,7 @@
 title: "Bitbucket Cloud Pipelines"
 slug: "bitbucket-cloud-pipelines"
 hidden: false
+layout: default
 createdAt: "2021-03-11T14:30:56.316Z"
 updatedAt: "2021-03-18T13:22:25.715Z"
 ---

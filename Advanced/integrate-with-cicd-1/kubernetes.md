@@ -2,6 +2,7 @@
 title: "Kubernetes"
 slug: "kubernetes"
 hidden: false
+layout: default
 createdAt: "2021-03-11T14:31:16.558Z"
 updatedAt: "2021-03-11T21:35:25.423Z"
 ---

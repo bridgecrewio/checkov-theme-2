@@ -1,1 +1,23 @@
 @import "docs-menu";
+
+.hljs {
+  border: 1px solid $medium-gray !important;
+  border-radius: 8px;
+  background-color: #FBFDFF !important;
+  padding: 40px !important;
+  margin-bottom: 16px !important;
+}
+
+code.highlighter-rouge {
+  border: 0;
+  border-radius: 100px;
+  background-color: $primary-color;
+  color: $white;
+  padding: 0.15rem 0.75rem 0.2rem 0.75rem;
+}
+
+div.section {
+  p {
+    line-height: 2;
+  }
+}
