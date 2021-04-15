@@ -60,6 +60,15 @@ $(document).ready(function() {
             header.classList.remove("sticky");
         }
     }
+
+    // Smooth scroll on docs
+    $('a').click(function (e) {
+        var $top = ($($(this).attr('href')).offset().top - 106);
+
+        $('html, body').animate({
+            scrollTop: $top
+        }, 1000);
+    });
 })
 
 function abbrNum(number, decPlaces) {
