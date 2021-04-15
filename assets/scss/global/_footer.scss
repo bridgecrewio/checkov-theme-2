@@ -29,11 +29,21 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
 
       li {
         display: block;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        width: calc(100vw / 2);
+
+        @media all and (min-width: 426px) {
+          width: calc(100vw / 3);
+        }
       }
 
       a {
@@ -45,11 +55,21 @@
       }
 
       @include breakpoint(medium) {
-        columns: 2;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
+        li {
+          width: 50%;
+        }
       }
 
       @include breakpoint(large) {
-        columns: 3;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
+        li {
+          width: 33%;
+        }
       }
     }
   }
