@@ -88,12 +88,13 @@
     }
 
     .bridge-logo {
-      max-height: 40px;
+      width: 100%;
       max-width: 206px;
+      height: auto;
       margin: 0.5rem 0;
 
       path {
-        fill: $dark-gray;
+        fill: #8293C0;
       }
     }
 
