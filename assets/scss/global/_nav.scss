@@ -3,10 +3,15 @@
     position: relative;
     background: $dark-gray;
 
+    .grid-x {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
     .utility-nav {
       li {
         a {
-          color: $secondary-color;
+          color: $primary-color;
         }
 
         &.is-dropdown-submenu-parent {
@@ -98,6 +103,18 @@
 
     @include breakpoint(large) {
       top: 70px;
+    }
+
+    .logo-wrapper {
+      display: block;
+      max-width: 175px;
+      height: auto;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -217,8 +234,10 @@ body.home {
       }
 
       .logo-wrapper {
-        img {
-          filter: brightness(0) invert(1);
+        svg {
+          path {
+            fill: $white;
+          }
         }
       }
 
