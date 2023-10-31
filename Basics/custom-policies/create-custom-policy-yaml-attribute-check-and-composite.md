@@ -60,7 +60,7 @@ An **Attribute Block** in a policy's definition, indicates that a resource will 
 {
   "type": "info",
   "title": "Note",
-  "body": "Bridgecrew's Custom Policies in code utilize the Terraform attribute library and syntax.\nThese policies are checked during scans of both buildtime and runtime resources and for all supported cloud providers."
+  "body": "Prisma Cloud's Custom Policies in code utilize the Terraform attribute library and syntax.\nThese policies are checked during scans of both buildtime and runtime resources and for all supported cloud providers."
 }
 [/block]
 ###Attribute - Example 
@@ -259,7 +259,7 @@ The Custom Policy in this example ensures that all ELBs are attached to security
 }
 [/block]
 ##Using AND/OR Logic
-Bridgecrew Cloud allows you to combine definition blocks using AND/OR operators.
+Prisma Cloud allows you to combine definition blocks using AND/OR operators.
 [block:callout]
 {
   "type": "info",

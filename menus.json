@@ -1,8 +1,8 @@
 {
   "utility": [
     {
-      "label": "About Bridgecrew by Prisma Cloud",
-      "url": "https://bridgecrew.io",
+      "label": "About Prisma Cloud",
+      "url": "https://prismacloud.io",
       "target": "_blank",
       "submenu": false
     }

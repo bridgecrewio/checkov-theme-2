@@ -145,7 +145,7 @@ If you installed Checkov with pip3, use the following command to upgrade:
 {
   "codes": [
     {
-      "code": "check: CKV_AWS_21: \"Ensure all data stored in the S3 bucket have versioning enabled\"\n\tFAILED for resource: aws_s3_bucket.customer\n\tFile: /tf/tf.json:0-0\n\tGuide: https://docs.bridgecrew.io/docs/s3_16-enable-versioning",
+      "code": "check: CKV_AWS_21: \"Ensure all data stored in the S3 bucket have versioning enabled\"\n\tFAILED for resource: aws_s3_bucket.customer\n\tFile: /tf/tf.json:0-0\n\tGuide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning",
       "language": "json",
       "name": "Terraform Show Output File Results"
     }
@@ -157,7 +157,7 @@ If you have installed jq, you can convert a JSON file into multiple lines with t
 {
   "codes": [
     {
-      "code": "checkov -f tf.json\nCheck: CKV_AWS_21: \"Ensure all data stored in the S3 bucket have versioning enabled\"\n\tFAILED for resource: aws_s3_bucket.customer\n\tFile: /tf/tf1.json:224-268\n\tGuide: https://docs.bridgecrew.io/docs/s3_16-enable-versioning\n\n\t\t225 |               \"values\": {\n\t\t226 |                 \"acceleration_status\": \"\",\n\t\t227 |                 \"acl\": \"private\",\n\t\t228 |                 \"arn\": \"arn:aws:s3:::mybucket\",",
+      "code": "checkov -f tf.json\nCheck: CKV_AWS_21: \"Ensure all data stored in the S3 bucket have versioning enabled\"\n\tFAILED for resource: aws_s3_bucket.customer\n\tFile: /tf/tf1.json:224-268\n\tGuide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning\n\n\t\t225 |               \"values\": {\n\t\t226 |                 \"acceleration_status\": \"\",\n\t\t227 |                 \"acl\": \"private\",\n\t\t228 |                 \"arn\": \"arn:aws:s3:::mybucket\",",
       "language": "json",
       "name": "Scan Results on Multiple Lines"
     }

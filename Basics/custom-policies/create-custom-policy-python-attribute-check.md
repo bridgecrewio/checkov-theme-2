@@ -17,7 +17,7 @@ A policy needs to specify *name*, *ID*, *relevant resources* and *categories*.
     "0-0": "``name``",
     "0-1": "A new policy's unique purpose.\nIt should ideally specify the positive desired outcome of the policy.",
     "1-0": "``id``",
-    "1-1": "A mandatory unique identifier of a policy.\nNative policies written by Bridgecrew contributors will follow the following convention:\n``CKV_providerType_serialNumber``",
+    "1-1": "A mandatory unique identifier of a policy.\nNative policies written by Checkov contributors will follow the following convention:\n``CKV_providerType_serialNumber``",
     "1-2": "`CKV_AWS_9` ,\n`CKV_GCP_12`",
     "2-0": "``supported_resources``",
     "2-1": "Infrastructure objects, as described in the scanned IaC's language.\nThis usually contains one specific resource block.\nIf you support multiple resources, you can use `*` to match any type of entity in that specific domain.",

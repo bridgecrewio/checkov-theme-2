@@ -90,7 +90,7 @@ The output report would then contain a failed check:
 }
 [/block]
 #Visualizing Scan Output
-In addition to the various formats for seeing scan results (for example, CLI), you can also visualize Checkov results with a quick integration with a free account on Bridgecrew Cloud. See [Visualizing Scan Results](doc:visualizing-scan-results).
+In addition to the various formats for seeing scan results (for example, CLI), you can also visualize Checkov results with a quick integration with Prisma Cloud. See [Visualizing Scan Results](doc:visualizing-scan-results).
 [block:image]
 {
   "images": [
