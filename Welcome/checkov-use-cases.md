@@ -33,10 +33,8 @@ See:
 
 ## View Checkov CI/CD Results
 See:
-  * [View Jenkins Job Status](https://docs.bridgecrew.io/v3/docs/jenkins#jenkins-job-status)
-  * [View Bitbucket Pipeline Results](https://docs.bridgecrew.io/v3/docs/bitbucket-cloud-pipelines#bitbucket-cloud-pipeline---results)
-  * [View Github Action Results](https://docs.bridgecrew.io/v3/docs/github-actions#view-github-actions-results)
-  * [View Gitlab CLI Results](https://docs.bridgecrew.io/v3/docs/gitlab-cli#view-gitlab-cli-results)
+  * [View Jenkins Job Status](https://docs.prismacloud.io/en/classic/appsec-admin-guide/get-started/connect-your-repositories/ci-cd-runs/add-jenkins)
+  * [View Github Action Results](https://docs.prismacloud.io/en/classic/appsec-admin-guide/get-started/connect-your-repositories/ci-cd-runs/add-github-actions)
 
 #Custom Policies
 See:

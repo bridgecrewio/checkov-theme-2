@@ -14,7 +14,7 @@ updatedAt: "2021-03-17T11:14:26.389Z"
 
 Base examples on this:
 OR at Top Level - Two Attribute Blocks
-https://docs.bridgecrew.io/v3/docs/custom-policy-examples-1#or-at-top-level---two-attribute-blocks
+https://docs.prismacloud.io/en/enterprise-edition/content-collections/governance/custom-build-policies/custom-build-policy-examples#t-policy-definition-using-and-or-logic-attribute
 
 
 # Policy Definition Component - Specification
@@ -58,7 +58,7 @@ An **Attribute Block** in a policy's definition, indicates that a resource will 
 {
   "type": "info",
   "title": "Note",
-  "body": "Bridgecrew's Custom Policies in code utilize the Terraform attribute library and syntax.\nThese policies are checked during scans of both buildtime and runtime resources and for all supported cloud providers."
+  "body": "Prisma Cloud's Custom Policies in code utilize the Terraform attribute library and syntax.\nThese policies are checked during scans of both buildtime and runtime resources and for all supported cloud providers."
 }
 [/block]
 
@@ -257,7 +257,7 @@ In line with best practices, connections of this nature should be defined using 
 
 ##Using AND/OR Logic
 
-Bridgecrew Cloud allows combination of definition blocks using AND/OR operators.
+Prisma Cloud allows combination of definition blocks using AND/OR operators.
 [block:callout]
 {
   "type": "info",
