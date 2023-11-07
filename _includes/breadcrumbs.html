@@ -18,7 +18,7 @@
   </ul>
   <aside class="breadcrumbs-aside">
     {%- if site.edit_on_github != false and page and page.name != "search.html" %}
-    <a href="{{ site.repo_url | url }}/blob/master/{%- if site.github_docs_folder %}docs/{% endif %}{{ page.path }}" target="_blank">
+    <a href="{{ site.repo_url | url }}/blob/main/{%- if site.github_docs_folder %}docs/{% endif %}{{ page.path }}" target="_blank">
       <svg class="icon">
         <use xlink:href="#github-logo"></use>
       </svg>
@@ -28,4 +28,3 @@
   </aside>
 </nav>
 <hr/>
-
